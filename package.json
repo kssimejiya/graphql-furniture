@@ -2,10 +2,12 @@
   "name": "g-furniture",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=18.x"
+  },
   "scripts": {
-    "copy-schema": "cp src/schema.graphql dist/",
-    "build": "tsc && npm run copy-schema",
+    "build": "tsc -p tsconfig.json",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "prisma:generate": "prisma generate",

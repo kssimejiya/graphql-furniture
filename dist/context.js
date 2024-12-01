@@ -6,4 +6,3 @@ const prisma = new client_1.PrismaClient();
 exports.context = {
     prisma,
 };
-//# sourceMappingURL=context.js.map

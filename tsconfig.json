@@ -1,28 +1,14 @@
 {
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist",
-    "lib": [
-      "es2020",
-      "esnext.asynciterable"
-    ],
     "target": "es2020",
     "module": "commonjs",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "types": [
-      "node"
-    ],
+    "rootDir": "./src",
+    "outDir": "./dist",
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "allowJs": true,
-    "noEmit": false,
-    "sourceMap": true,
-    "declaration": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false
+    "moduleResolution": "node"
   },
   "include": [
     "src/**/*"
