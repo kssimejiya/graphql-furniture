@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "copy-schema": "cp src/schema.graphql dist/",
+    "build": "tsc && npm run copy-schema",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "prisma:generate": "prisma generate",
     "prisma:push": "prisma db push",
     "seed": "ts-node prisma/seed.ts",
+    "postinstall": "prisma generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
