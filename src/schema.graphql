@@ -1,0 +1,21 @@
+scalar DateTime
+
+type Color {
+  id: ID!
+  name: String!
+  hex: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type Query {
+  colors: [Color!]!
+  color(id: ID!): Color
+  colorByName(name: String!): Color
+}
+
+type Mutation {
+  createColor(name: String!, hex: String!): Color!
+  updateColor(id: ID!, name: String, hex: String): Color!
+  deleteColor(id: ID!): Color!
+}
