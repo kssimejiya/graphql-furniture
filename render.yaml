@@ -5,6 +5,7 @@ services:
     plan: free
     buildCommand: |
       npm install
+      npm install --save-dev @types/node
       npm run prisma:generate
       npm run build
       cp -r dist /opt/render/project/src/
